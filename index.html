@@ -1,17 +1,38 @@
 <html>
-<body>
-<h1>Generate Random Quote</h1>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-<button onclick="myFunction()">Generate</button>
 
-<p id="demo"></p>
-<script>
-    function myFunction() {
-        var quotes = ["The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela", "The way to get started is to quit talking and begin doing. -Walt Disney", "Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking. -Steve Jobs", "If life were predictable it would cease to be life, and be without flavor. -Eleanor Roosevelt", "If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough. -Oprah Winfrey", "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success. -James Cameron", "Life is what happens when you're busy making other plans. -John Lennon", "Spread love everywhere you go. Let no one ever come to you without leaving happier. -Mother Teresa", "When you reach the end of your rope, tie a knot in it and hang on. -Franklin D. Roosevelt", "Tell me and I forget. Teach me and I remember. Involve me and I learn. -Benjamin Franklin"];
-        var quote = quotes[Math.floor(Math.random() * quotes.length)];
-        document.getElementById("demo").innerHTML = quote;
-    }
-</script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<div class="navbar-light">
+    <div class="d-flex justify-content-center">
+        <h1>Generate Random Quote</h1>
+    </div>
+</div>    
+</head>
+    <body class="jumbotron">   
+        <br>                       
+        <div class="container d-flex justify-content-center">
 
-</body>
+            <button onclick="myFunction()">Generate</button>
+        </div>
+        <br>
+        <div class="container d-flex justify-content-center">
+            <p id="demo"></p>
+        </div>
+        
+        
+        <script>
+            function myFunction() {
+                var quotes = ["The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela", "The way to get started is to quit talking and begin doing. -Walt Disney", "Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking. -Steve Jobs", "If life were predictable it would cease to be life, and be without flavor. -Eleanor Roosevelt", "If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough. -Oprah Winfrey", "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success. -James Cameron", "Life is what happens when you're busy making other plans. -John Lennon", "Spread love everywhere you go. Let no one ever come to you without leaving happier. -Mother Teresa", "When you reach the end of your rope, tie a knot in it and hang on. -Franklin D. Roosevelt", "Tell me and I forget. Teach me and I remember. Involve me and I learn. -Benjamin Franklin"];
+                var quote = quotes[Math.floor(Math.random() * quotes.length)];
+                document.getElementById("demo").innerHTML = quote;
+            }
+        </script>
+        
+        
+    </body>
 </html>
